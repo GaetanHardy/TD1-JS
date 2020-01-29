@@ -3,6 +3,8 @@ window.addEventListener("load", event => main());
 const main = () => {
 	
 	console.log("MAIN");
+
+	test_voiture();
 	
 	let user = {
 		firstName: "gaëtan",
@@ -31,7 +33,7 @@ const main = () => {
 	let sum = tab.reduce((acc, element) => {
 		return acc + element;
 	}, 0); // Le 0 est la valeur de base de l'accumulateur donc la valeur de base de reduce
-	console.log(sum);
+	//console.log(sum);
 }
 
 const capFirstLetter = value => value.charAt(0).toUpperCase() + value.slice(1);
